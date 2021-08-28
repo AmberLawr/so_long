@@ -7,7 +7,8 @@ FLAGS = -Wall -Wextra -Werror
 
 MLX = -Lminilibx -lmlx -framework OpenGL -framework AppKit
 
-SRC = ft_so_long.c ft_paintfct.c
+SRC = ft_so_long.c ft_img_init.c ft_paintfct.c ft_movements.c ft_errors.c \
+	ft_exitgame.c ft_collectexit.c ft_updatemap.c
 
 #how do I include gnl.o files?
 
@@ -31,6 +32,7 @@ clean:
 
 fclean: clean
 	rm -f $(NAME)
+	rm -f so_long
 	$(MAKE) clean -C $(LIBFT_PATH)
 
 re: fclean all

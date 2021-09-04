@@ -14,3 +14,4 @@ https://convertio.co/png-xpm/
 https://harm-smits.github.io/42docs/libs/minilibx/getting_started.html
 
 for more info on the approach, check out the wiki section of this page.
+https://github.com/AmberLawr/so_long/wiki

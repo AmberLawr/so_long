@@ -6,13 +6,14 @@
 /*   By: jzhou <jzhou@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/16 13:53:57 by jzhou             #+#    #+#             */
-/*   Updated: 2021/06/25 20:25:38 by jzhou            ###   ########.fr       */
+/*   Updated: 2021/09/03 17:51:12 by jzhou            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include "libft.h"
-int	ft_isdigit (int argument)
+
+int	ft_isdigit(int argument)
 {
 	if (argument >= 48 && argument <= 57)
 		return (1);

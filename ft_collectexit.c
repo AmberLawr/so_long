@@ -6,7 +6,7 @@
 /*   By: jzhou <jzhou@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/24 10:50:07 by jzhou             #+#    #+#             */
-/*   Updated: 2021/08/28 14:36:39 by jzhou            ###   ########.fr       */
+/*   Updated: 2021/09/03 12:33:02 by jzhou            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_countcol(t_so_long *mygame)
 {
-	int			screencol;
+	int	screencol;
 
 	mygame->collectible--;
 	screencol = mygame->colsum - mygame->collectible;

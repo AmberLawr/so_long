@@ -6,7 +6,7 @@
 /*   By: jzhou <jzhou@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/28 12:39:21 by jzhou             #+#    #+#             */
-/*   Updated: 2021/08/28 14:36:41 by jzhou            ###   ########.fr       */
+/*   Updated: 2021/08/29 14:22:05 by jzhou            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,11 @@
 
 void	ft_updatemap(int x, int y, t_so_long *mypath)
 {
-	int y_next;
-	int x_next;
+	int	y_next;
+	int	x_next;
 
 	y_next = mypath->myplayer.vertical;
 	x_next = mypath->myplayer.horizontal;
-
 	if (mypath->map.map[y][x] == 'E' || mypath->map.map[y][x] == 'G')
 	{
 		mypath->map.map[y][x] = 'E';
@@ -38,8 +37,8 @@ void	ft_updatemap(int x, int y, t_so_long *mypath)
 
 void	ft_currentfield(int x, int y, t_so_long *mypath)
 {
-	int y_next;
-	int x_next;
+	int	y_next;
+	int	x_next;
 
 	y_next = mypath->myplayer.vertical;
 	x_next = mypath->myplayer.horizontal;
@@ -59,6 +58,6 @@ void	ft_currentfield(int x, int y, t_so_long *mypath)
 			ft_paintexit(x, y, mypath);
 		}
 		else
-			ft_paintplayer(x_next,y_next, mypath);;
+			ft_paintplayer(x_next, y_next, mypath);
 	}
 }

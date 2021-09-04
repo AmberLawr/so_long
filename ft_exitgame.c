@@ -6,15 +6,13 @@
 /*   By: jzhou <jzhou@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/25 13:58:18 by jzhou             #+#    #+#             */
-/*   Updated: 2021/08/26 11:15:06 by jzhou            ###   ########.fr       */
+/*   Updated: 2021/08/30 13:15:23 by jzhou            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_game.h"
 
-int	ft_exitgame()
+int	ft_exitgame(void)
 {
 	exit (0);
-	return (0);
 }
-

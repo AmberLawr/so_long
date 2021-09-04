@@ -1,35 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_errorsquare.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jzhou <jzhou@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/06/16 08:09:23 by jzhou             #+#    #+#             */
-/*   Updated: 2021/09/03 17:50:51 by jzhou            ###   ########.fr       */
+/*   Created: 2021/08/30 19:15:47 by jzhou             #+#    #+#             */
+/*   Updated: 2021/09/03 12:44:09 by jzhou            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_game.h"
 
-void	*ft_memmove(void *dst, const void *src, size_t len)
+int	ft_checksquare(t_so_long *mygame)
 {
-	unsigned char	*csrc;
-	unsigned char	*cdest;
+	int	index;
+	int	first_lwidth;
 
-	csrc = (unsigned char *)src;
-	cdest = (unsigned char *)dst;
-	if ((cdest == 0) && (csrc == 0))
-		return (0);
-	if (csrc < cdest)
+	first_lwidth = ft_strlen(mygame->map.map[0]);
+	index = 1;
+	while (index < mygame->img_height)
 	{
-		while (len > 0)
-		{
-			cdest[len - 1] = csrc[len - 1];
-			len--;
-		}
+		if ((int)ft_strlen(mygame->map.map[index]) != first_lwidth)
+			return (-1);
+		index++;
 	}
-	else
-		ft_memcpy(cdest, csrc, len);
-	return (dst);
+	return (0);
 }

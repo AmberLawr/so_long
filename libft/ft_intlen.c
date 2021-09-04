@@ -1,17 +1,16 @@
-#include  "libft.h"
+#include "libft.h"
 
-int ft_intlen(int nbr)
+int	ft_intlen(int nbr)
 {
-    int counter;
+	int	counter;
 
-    if (nbr == 0)
-        return (1);
-    counter = 0;
-
-    while (nbr != 0)
-    {
-        nbr = nbr / 10;
-        counter++;
-    }
-    return (counter);
+	if (nbr == 0)
+		return (1);
+	counter = 0;
+	while (nbr != 0)
+	{
+		nbr = nbr / 10;
+		counter++;
+	}
+	return (counter);
 }

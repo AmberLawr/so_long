@@ -6,7 +6,7 @@
 /*   By: jzhou <jzhou@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/22 12:47:42 by jzhou             #+#    #+#             */
-/*   Updated: 2021/08/23 09:42:09 by jzhou            ###   ########.fr       */
+/*   Updated: 2021/09/03 17:51:01 by jzhou            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ char	*ft_strnstr(const char	*big, const char *little, size_t len);
 int		ft_strncmp(const char *str1, const char *str2, size_t n);
 int		ft_atoi(const char *str);
 int		ft_isalpha(int argument);
-int		ft_isdigit (int argument);
+int		ft_isdigit(int argument);
 int		ft_isalnum(int argument);
 int		ft_isascii(int c);
 int		ft_isprint(int arg);

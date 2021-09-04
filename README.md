@@ -12,3 +12,5 @@ https://convertio.co/png-xpm/
 
 4. start researching and coding. A good intro offers this website:
 https://harm-smits.github.io/42docs/libs/minilibx/getting_started.html
+
+for more info on the approach, check out the wiki section of this page.
